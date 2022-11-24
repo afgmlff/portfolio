@@ -1,3 +1,9 @@
 .test{
-    
+    color: rgb(218, 218, 236);
+    font-size: small;
+    text-align: center;
+}
+
+.logocc{
+    height: 15px;
 }

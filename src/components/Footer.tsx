@@ -1,6 +1,7 @@
 import React from 'react';
 import './Footer.css';
 import { IonContent, IonFooter, IonTitle, IonToolbar } from '@ionic/react';
+import { IonCol, IonGrid, IonRow } from '@ionic/react';
 import Home from '../pages/Home';
 
 export const Footer = () => {
@@ -11,7 +12,12 @@ export const Footer = () => {
         </IonContent>
         <IonFooter>
             <IonToolbar>
-                <IonTitle class='test'><p>Aécio Fernandes</p></IonTitle>
+            <IonGrid>
+                <IonRow>
+                <IonCol><p className='test'>© 2022 Aécio Fernandes</p></IonCol>
+                </IonRow>
+            </IonGrid>
+                
             </IonToolbar>
         </IonFooter>
     </>
