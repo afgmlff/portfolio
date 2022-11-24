@@ -1,14 +1,17 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import { useEffect } from 'react';
 import './Home.css';
 
 const Home: React.FC = () => {
 
-  const canvas = document.getElementById("canvas") as HTMLCanvasElement | null
+  useEffect(() => {
+    const canvas = document.getElementById("canvas") as HTMLCanvasElement | null
   
 
-  var ctx = canvas!.getContext('2d');
+    var ctx = canvas!.getContext('2d');
 
-  canvas!.width = window.innerWidth;
+
+    canvas!.width = window.innerWidth;
   canvas!.height = window.innerHeight;
 
 
@@ -111,6 +114,12 @@ function tick() {
 
 tick();
 
+
+  }, []);
+
+
+
+  
 
   return (
     <IonPage>
