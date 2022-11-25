@@ -1,4 +1,4 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import { IonContent, IonGrid, IonHeader, IonPage, IonRow, IonTitle, IonToolbar } from '@ionic/react';
 import { useEffect } from 'react';
 import { Footer } from '../components/Footer';
 import './Home.css';
@@ -19,7 +19,7 @@ const Home: React.FC = () => {
 
   var dots: any[] = [], // dots
     FPS = 60, 
-    x = 170, //qtd de dots
+    x = 200, //qtd de dots
     
     mouse = {
       x: 0,
@@ -31,7 +31,7 @@ const Home: React.FC = () => {
     dots.push({
       x: Math.random() * canvas!.width,
       y: Math.random() * canvas!.height,
-      radius: Math.random() * 1 + 1,
+      radius: Math.random(),
       vx: Math.floor(Math.random() * 50) - 25,
       vy: Math.floor(Math.random() * 50) - 25
     });
@@ -63,10 +63,10 @@ function draw() {
   for (var i = 0, x = dots.length; i < x; i++) {
     var starI = dots[i];
     ctx!.moveTo(starI.x,starI.y); 
-    if(distance(mouse, starI) < 150) ctx!.lineTo(mouse.x, mouse.y);
+    if(distance(mouse, starI) < ratioII) ctx!.lineTo(mouse.x, mouse.y);
     for (var j = 0, x = dots.length; j < x; j++) {
       var starII = dots[j];
-      if(distance(starI, starII) < 150 && Math.max(distance(mouse, starI), distance(mouse, starII)) < 150) {
+      if(distance(starI, starII) < ratioI && Math.max(distance(mouse, starI), distance(mouse, starII)) < ratioII) {
         //ctx!.globalAlpha = (1 / 150 * distance(starI, starII).toFixed(1));
         ctx!.lineTo(starII.x,starII.y); 
       }
@@ -105,8 +105,9 @@ function update() {
 }
 
 canvas!.addEventListener('mousemove', function(e){
-  mouse.x = e.clientX;
-  mouse.y = e.clientY;
+  var rect = canvas!.getBoundingClientRect();
+  mouse.x = e.clientX - rect.left;
+  mouse.y = e.clientY - rect.top;
 });
 
 // Update and draw
@@ -149,6 +150,11 @@ function handleResize() {
         <IonHeader collapse="condense">
         </IonHeader>
         <canvas id="canvas"></canvas>
+        <IonGrid>
+          <IonRow>
+            teste
+          </IonRow>
+        </IonGrid>
         <Footer />
       </IonContent>
     </IonPage>
