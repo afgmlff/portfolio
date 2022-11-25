@@ -19,7 +19,7 @@ const Home: React.FC = () => {
 
   var dots: any[] = [], // dots
     FPS = 60, 
-    x = 100, //qtd de dots
+    x = 170, //qtd de dots
     
     mouse = {
       x: 0,
@@ -63,7 +63,7 @@ function draw() {
     if(distance(mouse, starI) < 150) ctx!.lineTo(mouse.x, mouse.y);
     for (var j = 0, x = dots.length; j < x; j++) {
       var starII = dots[j];
-      if(distance(starI, starII) < 150) {
+      if(distance(starI, starII) < 150 && Math.max(distance(mouse, starI), distance(mouse, starII)) < 250) {
         //ctx!.globalAlpha = (1 / 150 * distance(starI, starII).toFixed(1));
         ctx!.lineTo(starII.x,starII.y); 
       }
