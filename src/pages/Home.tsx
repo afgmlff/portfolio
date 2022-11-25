@@ -1,10 +1,12 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import { useEffect } from 'react';
+import { Footer } from '../components/Footer';
 import './Home.css';
 
 const Home: React.FC = () => {
 
   useEffect(() => {
+    
     const canvas = document.getElementById("canvas") as HTMLCanvasElement | null
   
 
@@ -114,6 +116,24 @@ function tick() {
 
 tick();
 
+window.addEventListener('resize', handleResize)
+
+function handleResize() {
+  canvas!.width = window.innerWidth;
+  canvas!.height = window.innerHeight;
+  dots = []
+  for (var i = 0; i < x; i++) {
+    dots.push({
+      x: Math.random() * canvas!.width,
+      y: Math.random() * canvas!.height,
+      radius: Math.random() * 1 + 1,
+      vx: Math.floor(Math.random() * 50) - 25,
+      vy: Math.floor(Math.random() * 50) - 25
+    });
+  }
+
+  tick();
+}
 
   }, []);
 
@@ -127,6 +147,7 @@ tick();
         <IonHeader collapse="condense">
         </IonHeader>
         <canvas id="canvas"></canvas>
+        <Footer />
       </IonContent>
     </IonPage>
   );

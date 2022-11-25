@@ -8,18 +8,12 @@ export const Footer = () => {
     return (
     <>
         <IonContent className="ion-padding">
-            <Home />
-        </IonContent>
-        <IonFooter>
-            <IonToolbar>
             <IonGrid>
                 <IonRow>
                 <IonCol><p className='test'>© 2022 Aécio Fernandes</p></IonCol>
                 </IonRow>
             </IonGrid>
-                
-            </IonToolbar>
-        </IonFooter>
+        </IonContent>
     </>
     )
 }

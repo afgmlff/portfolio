@@ -27,7 +27,7 @@ setupIonicReact();
 
 const App: React.FC = () => (
   <IonApp>
-    <Footer />
+    <Home />
   </IonApp>
 );
 
