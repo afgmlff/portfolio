@@ -44,6 +44,9 @@ function draw() {
   ctx!.clearRect(0,0,canvas!.width,canvas!.height);
   
   ctx!.globalCompositeOperation = "lighter";
+
+  var ratioI = canvas!.width * canvas!.height / 12101
+  var ratioII = canvas!.width * canvas!.height / 9076
   
   for (var i = 0, x = dots.length; i < x; i++) {
     var s = dots[i];
@@ -63,7 +66,7 @@ function draw() {
     if(distance(mouse, starI) < 150) ctx!.lineTo(mouse.x, mouse.y);
     for (var j = 0, x = dots.length; j < x; j++) {
       var starII = dots[j];
-      if(distance(starI, starII) < 150 && Math.max(distance(mouse, starI), distance(mouse, starII)) < 250) {
+      if(distance(starI, starII) < 150 && Math.max(distance(mouse, starI), distance(mouse, starII)) < 150) {
         //ctx!.globalAlpha = (1 / 150 * distance(starI, starII).toFixed(1));
         ctx!.lineTo(starII.x,starII.y); 
       }
@@ -132,7 +135,6 @@ function handleResize() {
     });
   }
 
-  tick();
 }
 
   }, []);
