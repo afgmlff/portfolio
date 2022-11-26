@@ -1,5 +1,6 @@
-import { IonContent, IonGrid, IonHeader, IonPage, IonRow, IonTitle, IonToolbar } from '@ionic/react';
+import { IonContent, IonFooter, IonGrid, IonHeader, IonPage, IonRow, IonTitle, IonToolbar } from '@ionic/react';
 import { useEffect } from 'react';
+import { About } from '../components/About';
 import { Footer } from '../components/Footer';
 import './Home.css';
 
@@ -130,7 +131,7 @@ function handleResize() {
     dots.push({
       x: Math.random() * canvas!.width,
       y: Math.random() * canvas!.height,
-      radius: Math.random() * 1 + 1,
+      radius: Math.random(),
       vx: Math.floor(Math.random() * 50) - 25,
       vy: Math.floor(Math.random() * 50) - 25
     });
@@ -147,14 +148,9 @@ function handleResize() {
   return (
     <IonPage>
       <IonContent fullscreen>
-        <IonHeader collapse="condense">
-        </IonHeader>
+
         <canvas id="canvas"></canvas>
-        <IonGrid>
-          <IonRow>
-            teste
-          </IonRow>
-        </IonGrid>
+        <About />
         <Footer />
       </IonContent>
     </IonPage>

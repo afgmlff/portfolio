@@ -1,5 +1,5 @@
 import { Redirect, Route } from 'react-router-dom';
-import { IonApp, IonRouterOutlet, setupIonicReact } from '@ionic/react';
+import { IonApp, IonFooter, IonRouterOutlet, setupIonicReact } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 import Home from './pages/Home';
 import { Footer } from './components/Footer';
@@ -28,6 +28,7 @@ setupIonicReact();
 const App: React.FC = () => (
   <IonApp>
     <Home />
+
   </IonApp>
 );
 

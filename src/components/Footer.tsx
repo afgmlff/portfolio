@@ -7,13 +7,9 @@ import Home from '../pages/Home';
 export const Footer = () => {
     return (
     <>
-        <IonContent className="ion-padding">
-            <IonGrid>
-                <IonRow>
-                <IonCol><p className='test'>© 2022 Aécio Fernandes</p></IonCol>
-                </IonRow>
-            </IonGrid>
-        </IonContent>
+        <IonFooter>
+            <p className='copyr'>© 2022 Aécio Fernandes</p>
+        </IonFooter>
     </>
     )
 }
