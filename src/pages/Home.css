@@ -32,3 +32,16 @@ canvas {
 .welcomeColor{
     color:#25FFFF;
 }
+
+.welcomeImg{
+
+ 
+    z-index: 10;
+    background: none;
+    pointer-events:none;
+    position:absolute;
+    bottom:0;
+    margin-bottom: 20px;
+    
+}
+

@@ -148,7 +148,12 @@ function handleResize() {
   return (
     <IonPage>
       <IonContent fullscreen>
-        <p className='welcome'>Hi, I'm <span className='welcomeColor'>Aécio</span></p>
+      <IonGrid style={{ padding : 0}}>
+        <div>
+        <IonRow ><p className='welcome'>Hi, I'm <span className='welcomeColor'>Aécio</span>.<br/>Scroll down and get to know me.</p></IonRow>
+        <IonRow class="ion-justify-content-center "><img className='welcomeImg' src="./assets/mouseScroll.gif"></img></IonRow>
+        </div>
+      </IonGrid>
         <canvas id="canvas"></canvas>
         <About />
         <Footer />
