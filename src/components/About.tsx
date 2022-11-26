@@ -7,10 +7,10 @@ import Home from '../pages/Home';
 export const About = () => {
     return (
     <>
-        <IonContent className="ion-padding" forceOverscroll={false}>
+        <IonContent className="ion-padding copyableText" forceOverscroll={false}>
             <IonGrid>
                 <IonRow>
-                <IonCol><p className=''>About</p></IonCol>
+                <IonCol><p className='contentTitle'>About</p></IonCol>
                 </IonRow>
             </IonGrid>
         </IonContent>

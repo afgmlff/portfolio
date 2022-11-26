@@ -1,0 +1,10 @@
+.copyableText{ /* pra permitir que o usuario copie texto pela versao mobile (?) */
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+}
+
+.contentTitle{
+    font-family: 'Roboto', sans-serif;
+}

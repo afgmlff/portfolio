@@ -148,7 +148,7 @@ function handleResize() {
   return (
     <IonPage>
       <IonContent fullscreen>
-
+        <p className='welcome'>Hi, I'm <span className='welcomeColor'>Aécio</span></p>
         <canvas id="canvas"></canvas>
         <About />
         <Footer />
