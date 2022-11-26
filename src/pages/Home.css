@@ -24,7 +24,7 @@ canvas {
     z-index: 10;
     background: none;
     pointer-events:none;
-
+    width: 100%;
 
     font-size:50px;
 }
@@ -45,3 +45,33 @@ canvas {
     
 }
 
+@media (max-width: 1142px) {
+    .welcome{
+        font-size: 40px
+    }
+}
+
+@media (max-width: 840px) {
+    .welcome{
+        font-size: 35px
+    }
+}
+
+@media (max-width: 700px) {
+    .welcome{
+        font-size: 30px
+    }
+}
+
+
+@media (max-width: 555px) {
+    .welcome{
+        font-size: 25px
+    }
+}
+
+@media (max-width: 400px) {
+    .welcome{
+        font-size: 20px
+    }
+}
