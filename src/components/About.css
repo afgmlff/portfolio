@@ -8,6 +8,7 @@
 .contentTitle{
     font-family: 'Roboto', sans-serif;
     text-align: center;
+    font-weight: bold;
     font-size: 40px;
     opacity: 0;
 }
@@ -15,4 +16,42 @@
 .animation{
     opacity: 1;
     transition: all 3s;
+}
+
+.transitionDiv{
+    height: 50px;
+    width: 100% !important;
+    background-color: #1a1a1a; /* For browsers that do not support gradients */
+    background-image: linear-gradient(#1a1a1a, #121212);
+}
+
+@media (max-width: 1142px) {
+    .contentTitle{
+        font-size: 40px
+    }
+}
+
+@media (max-width: 840px) {
+    .contentTitle{
+        font-size: 35px
+    }
+}
+
+@media (max-width: 700px) {
+    .contentTitle{
+        font-size: 30px
+    }
+}
+
+
+@media (max-width: 555px) {
+    .contentTitle{
+        font-size: 25px
+    }
+}
+
+@media (max-width: 400px) {
+    .contentTitle{
+        font-size: 20px
+    }
 }

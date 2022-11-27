@@ -31,8 +31,9 @@ useEffect(() => {
 
     return (
     <>
-        <IonContent className="ion-padding copyableText" forceOverscroll={false}>
-            <IonGrid>
+        <IonContent className="ion-no-padding ion-no-margin copyableText" forceOverscroll={false}>
+            <IonGrid className="ion-no-padding ion-no-margin">
+                <IonRow class="ion-no-margin"><div className='transitionDiv'></div></IonRow>
                 <IonRow>
                 <IonCol><p className='contentTitle'>About</p></IonCol>
                 </IonRow>
