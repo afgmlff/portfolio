@@ -7,6 +7,11 @@ import Home from '../pages/Home';
 export const About = () => {
     
 useEffect(() => {
+
+    let options = {
+        root: null,
+        rootMargin: "-300px",
+      };
     
     const observer = new IntersectionObserver(entries => {
         // Loop over the entries
@@ -17,7 +22,7 @@ useEffect(() => {
             entry.target.classList.add('animation');
           }
         });
-      });
+      }, options);
       
       observer.observe(document.querySelector('.contentTitle')!);
 
