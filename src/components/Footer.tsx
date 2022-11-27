@@ -3,10 +3,13 @@ import './Footer.css';
 import { IonContent, IonFooter, IonTitle, IonToolbar } from '@ionic/react';
 import { IonCol, IonGrid, IonRow } from '@ionic/react';
 import Home from '../pages/Home';
+import { Waypoint } from 'react-waypoint';
 
 export const Footer = () => {
     return (
     <>
+
+
         <IonFooter>
             <p className='copyr'>© 2022 Aécio Fernandes</p>
         </IonFooter>

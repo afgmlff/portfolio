@@ -9,4 +9,10 @@
     font-family: 'Roboto', sans-serif;
     text-align: center;
     font-size: 40px;
+    opacity: 0;
+}
+
+.animation{
+    opacity: 1;
+    transition: all 1.1s;
 }

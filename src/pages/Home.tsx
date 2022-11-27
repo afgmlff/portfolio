@@ -1,8 +1,11 @@
-import { IonContent, IonFooter, IonGrid, IonHeader, IonPage, IonRow, IonTitle, IonToolbar, CreateAnimation, Animation } from '@ionic/react';
+import { IonContent, IonFooter, IonGrid, IonHeader, IonPage, IonRow, IonTitle, IonToolbar, CreateAnimation, Animation, createAnimation } from '@ionic/react';
 import { useEffect } from 'react';
 import { About } from '../components/About';
 import { Footer } from '../components/Footer';
 import './Home.css';
+
+import { Waypoint } from 'react-waypoint';
+
 
 const Home: React.FC = () => {
 
