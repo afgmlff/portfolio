@@ -3,6 +3,7 @@
     -moz-user-select: text;
     -ms-user-select: text;
     user-select: text;
+    --ion-background-color: #121212;
 }
 
 .contentTitle{
@@ -19,7 +20,7 @@
 }
 
 .transitionDiv{
-    height: 50px;
+    height: 100px;
     width: 100% !important;
     background-color: #1a1a1a; /* For browsers that do not support gradients */
     background-image: linear-gradient(#1a1a1a, #121212);
