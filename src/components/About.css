@@ -13,8 +13,7 @@
     font-weight: bold;
     font-size: 40px;
     opacity: 1;
-    margin-bottom: 8px;
-    margin-top: 80px;
+    padding-top: 80px;
 }
 
 .contentTitle{ /*content fade in*/
@@ -27,7 +26,7 @@
     margin-top: 8px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 80px;
+    margin-bottom: 0px;
     height: 8px;
     width: 70px;
     background-color: #25ffff;
@@ -46,7 +45,9 @@
     background-image: linear-gradient(#1a1a1a, #121212);
 }
 
-
+.margTop{
+    margin-top: 80px;
+}
 
 
 .aboutText{
@@ -78,37 +79,13 @@
 }
 
 
-.dsk{
-    
-}
-
-.mob{
-    display: none;
-}
-
 .dskmob{
 
 }
 
-@media (max-width: 767px) { /*display mobile*/
-    .mob{
-        display: block;
-    }
-
-    .dsk{
-        display: none;
-    }
-    .dskmob{
-        display: block;
-    }
-}
 
 
-@media (max-width: 1142px) {
-    .contentTitle2{
-        font-size: 40px
-    }
-}
+
 
 @media (max-width: 1604px) {
 
@@ -137,8 +114,42 @@
     }
 }
 
+@media (max-width: 1142px) {
+    .contentTitle2{
+        font-size: 40px
+    }
+}
+
 @media (max-width: 840px) {
 
+}
+
+
+@media (max-width: 767px) { /*display mobile*/
+
+    .dskmob{
+        display: block;
+    }
+
+    .margTop{
+        margin-top: 40px;
+    }
+    .animation{
+        opacity: 1;
+        transition: all 2s;
+    }
+
+    .aboutText{
+        margin-bottom: 50px;
+    }
+    .aboutIcon{
+        width: 150px;
+    }
+
+    .underlineTitle{
+        height: 5px;
+        width: 50px;
+    }
 }
 
 @media (max-width: 700px) {

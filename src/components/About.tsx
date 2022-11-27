@@ -10,7 +10,7 @@ useEffect(() => {
 
     let options = {
         root: null,
-        rootMargin: "-30%",
+        rootMargin: "-10%",
       };
     
     const observer = new IntersectionObserver(entries => {
@@ -38,7 +38,7 @@ useEffect(() => {
                 <IonCol><div className='contentTitle2'>About<div className="underlineTitle"></div></div></IonCol>
                 </IonRow>
         
-                <IonRow className="ion-padding contentTitle dskmob"> {/* change class name later. */}
+                <IonRow className="ion-padding contentTitle dskmob margTop"> {/* change class name later. */}
                     <IonCol>
                         <div className='aboutText'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
