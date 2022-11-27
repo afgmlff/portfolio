@@ -4,6 +4,7 @@
     -ms-user-select: text;
     user-select: text;
     --ion-background-color: #121212;
+    
 }
 
 .contentTitle{
@@ -56,3 +57,21 @@
         font-size: 20px
     }
 }
+
+.meColor{
+    color:#25FFFF;
+}
+
+
+.aboutText{
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+    font-size: 25px;
+    height: 100%;
+}
+
+.aboutIcon{
+    display: flex;
+    justify-content: center;
+}
+
