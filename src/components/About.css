@@ -1,18 +1,37 @@
-.copyableText{ /* pra permitir que o usuario copie texto pela versao mobile (?) */
+.copyableText{ /* copyable text for mobile version (?) */
     -webkit-user-select: text;
     -moz-user-select: text;
     -ms-user-select: text;
     user-select: text;
     --ion-background-color: #121212;
-    
+    background-color: #121212;
 }
 
-.contentTitle{
+.contentTitle2{ /*actual title*/
     font-family: 'Roboto', sans-serif;
     text-align: center;
     font-weight: bold;
     font-size: 40px;
+    opacity: 1;
+    margin-bottom: 8px;
+    margin-top: 80px;
+}
+
+.contentTitle{ /*content fade in*/
+
     opacity: 0;
+
+}
+
+.underlineTitle{
+    margin-top: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 80px;
+    height: 8px;
+    width: 70px;
+    background-color: #25ffff;
+    border-radius: 10px;
 }
 
 .animation{
@@ -27,51 +46,117 @@
     background-image: linear-gradient(#1a1a1a, #121212);
 }
 
-@media (max-width: 1142px) {
-    .contentTitle{
-        font-size: 40px
-    }
-}
-
-@media (max-width: 840px) {
-    .contentTitle{
-        font-size: 35px
-    }
-}
-
-@media (max-width: 700px) {
-    .contentTitle{
-        font-size: 30px
-    }
-}
 
 
-@media (max-width: 555px) {
-    .contentTitle{
-        font-size: 25px
-    }
+
+.aboutText{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 25px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-@media (max-width: 400px) {
-    .contentTitle{
-        font-size: 20px
-    }
-}
 
 .meColor{
     color:#25FFFF;
 }
 
 
-.aboutText{
-    font-family: 'Roboto', sans-serif;
-    text-align: justify;
-    font-size: 25px;
-    height: 100%;
-}
 
 .aboutIcon{
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     justify-content: center;
+    width: 300px;
+}
+
+.fadeIn1{
+    opacity: 0;
+}
+
+
+.dsk{
+    
+}
+
+.mob{
+    display: none;
+}
+
+.dskmob{
+
+}
+
+@media (max-width: 767px) { /*display mobile*/
+    .mob{
+        display: block;
+    }
+
+    .dsk{
+        display: none;
+    }
+    .dskmob{
+        display: block;
+    }
+}
+
+
+@media (max-width: 1142px) {
+    .contentTitle2{
+        font-size: 40px
+    }
+}
+
+@media (max-width: 1604px) {
+
+    .contentTitle2{
+        font-size: 40px
+    }
+    .aboutText{
+        font-size: 22px;
+    }
+
+    .aboutIcon{
+        width: 260px;
+    }
+}
+
+@media (max-width: 1290px) {
+    .aboutText{
+        font-size: 18px;
+    }
+
+    .aboutIcon{
+        width: 220px;
+    }
+    .contentTitle2{
+        font-size: 35px
+    }
+}
+
+@media (max-width: 840px) {
+
+}
+
+@media (max-width: 700px) {
+    .contentTitle2{
+        font-size: 30px
+    }
+}
+
+
+@media (max-width: 555px) {
+    .contentTitle2{
+        font-size: 25px
+    }
+}
+
+@media (max-width: 400px) {
+    .contentTitle2{
+        font-size: 20px
+    }
 }
 

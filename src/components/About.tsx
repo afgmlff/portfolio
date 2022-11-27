@@ -34,14 +34,19 @@ useEffect(() => {
 
             <IonGrid className="ion-no-padding ion-no-margin copyableText">
                 <IonRow class="ion-no-margin"><div className='transitionDiv'></div></IonRow>
-                <IonRow>
-                <IonCol><p className='contentTitle'><span className="meColor">A</span>bout</p></IonCol>
+                <IonRow >
+                <IonCol><div className='contentTitle2'>About<div className="underlineTitle"></div></div></IonCol>
                 </IonRow>
-                <IonRow class="ion-padding">
+        
+                <IonRow className="ion-padding contentTitle dskmob"> {/* change class name later. */}
                     <IonCol>
-                        <p className='aboutText'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <div className='aboutText'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
                     </IonCol>
-                    <IonCol>
+                    <IonCol className='ion-justify-content-center'>
                         <img className='aboutIcon' src="./assets/icon/me.png"></img>
                     </IonCol>
                 </IonRow>
