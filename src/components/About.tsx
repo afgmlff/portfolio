@@ -10,7 +10,7 @@ useEffect(() => {
 
     let options = {
         root: null,
-        rootMargin: "-300px",
+        rootMargin: "-30%",
       };
     
     const observer = new IntersectionObserver(entries => {
