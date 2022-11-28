@@ -63,8 +63,8 @@ useEffect(() => {
                             <img className="cardIcon" src="./assets/html5-logo.png"/>
                             <img className="cardIcon" src="./assets/css.png"/>
                         </IonCardContent>
-                        <IonButton fill="clear">Action 1</IonButton>
-                        <IonButton fill="clear">Action 2</IonButton>
+                        <IonButton fill="clear" href='https://angular-wordle-maybe.web.app/' target='_blank'>View App</IonButton>
+                        <IonButton fill="clear" href='https://github.com/afgmlff/angular-maybe/tree/main/wordle' target='_blank'>Source code</IonButton>
                     </IonCard>
                 </IonCol>
 
