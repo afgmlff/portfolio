@@ -5,6 +5,7 @@ import { Footer } from '../components/Footer';
 import './Home.css';
 
 import { Waypoint } from 'react-waypoint';
+import { Projects } from '../components/Projects';
 
 
 const Home: React.FC = () => {
@@ -173,6 +174,7 @@ const Home: React.FC = () => {
       </IonGrid>
         <canvas id="canvas"></canvas>
         <About />
+        <Projects />
         <Footer />
       </IonContent>
     </IonPage>
