@@ -20,7 +20,7 @@
     display: flex;
     justify-content: center;
     width: 500px;
-    z-index: 2;
+    z-index: 0;
     position: relative;
 
 
@@ -42,3 +42,15 @@
 .boldT{
     font-weight:bold;
 }
+
+ion-card{
+    --background: rgba(0, 0, 0, 0.148);
+    --color: #c3d4d1;
+}
+
+
+.cardIcon{
+    height: 40px;
+    margin-right: 10px;
+}
+
