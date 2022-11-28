@@ -41,16 +41,12 @@ useEffect(() => {
                 </IonRow>
         
                 <IonRow className="ion-padding fadeIn1 dskmob margTop"> {/* change class name later. */}
-                    <IonCol>
-                        <div className='aboutText'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                <IonCol className='ion-text-left'>
+                        
+                        <img className='projLeft' src="./assets/wordleGif.gif"></img>
                     </IonCol>
-                    <IonCol className='ion-justify-content-center'>
-                        <img className='aboutIcon' src="./assets/wordle-mv.gif"></img>
-                    </IonCol>
+
+
                 </IonRow>
             </IonGrid>
  
