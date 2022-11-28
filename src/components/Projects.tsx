@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import './Projects.css';
-import { createAnimation, IonContent, IonFooter, IonTitle, IonToolbar } from '@ionic/react';
+import { createAnimation, IonButton, IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle, IonContent, IonFooter, IonTitle, IonToolbar } from '@ionic/react';
 import { IonCol, IonGrid, IonRow } from '@ionic/react';
 import Home from '../pages/Home';
 
@@ -44,7 +44,21 @@ useEffect(() => {
                 <IonCol className='ion-text-left'>
                         
                         <img className='projLeft' src="./assets/wordleGif.gif"></img>
-                    </IonCol>
+                </IonCol>
+                <IonCol>
+                    <IonCard>
+                        <IonCardHeader>
+                            <IonCardTitle><span className='boldT'>wanna be Wordle</span></IonCardTitle>
+                            <IonCardSubtitle>a browser words game</IonCardSubtitle>
+                        </IonCardHeader>
+
+                        <IonCardContent>
+                            Here's a small text description for the card content. Nothing more, nothing less.
+                        </IonCardContent>
+                        <IonButton fill="clear">Action 1</IonButton>
+                        <IonButton fill="clear">Action 2</IonButton>
+                    </IonCard>
+                </IonCol>
 
 
                 </IonRow>
