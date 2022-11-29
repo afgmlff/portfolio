@@ -59,7 +59,7 @@ useEffect(() => {
                         
                         <img className='projLeft' src="./assets/wordleGif.gif"></img>
                 </IonCol>
-                <IonCol size='3' offset='-2'>
+                <IonCol size='3' offset='-2' className='topElement'>
                     <IonCard>
                         <IonCardHeader>
                             <IonCardTitle><span className='boldT'>wanna be Wordle</span></IonCardTitle>
@@ -89,33 +89,36 @@ useEffect(() => {
 
 
 
-                <IonRow className="ion-padding fadeIn2 dskmob margTop"> {/* change class name later. */}
-                <IonCol className='ion-text-left' size='6'>
-                        
-                        <img className='projLeft' src="./assets/portpoliGif2.gif"></img>
-                </IonCol>
-                <IonCol size='3' offset='-2'>
-                    <IonCard>
-                        <IonCardHeader>
-                            <IonCardTitle><span className='boldT'>wanna be Wordle</span></IonCardTitle>
-                            <IonCardSubtitle>a browser words game</IonCardSubtitle>
-                        </IonCardHeader>
+                <IonRow className="ion-padding fadeIn2 dskmob margTop "> {/* change class name later. */}
 
-                        <IonCardContent>
-                            A project that shares the same logic as "Wordle" (The New York Times). I wanted to learn Angular in practice, but had no creativity at the time.
+                    <IonCol size='3' offset='' className='topElement'>
+                        <IonCard>
+                            <IonCardHeader>
+                                <IonCardTitle><span className='boldT'>Portfolio page</span></IonCardTitle>
+                                <IonCardSubtitle>a web page with info about me</IonCardSubtitle>
+                            </IonCardHeader>
 
-                        </IonCardContent>
+                            <IonCardContent>
+                                The ideia was to display some of my projects, and also improve my knowledge in ReactJS (and web development in general).
 
-                        <IonCardContent>
-                            <img className="cardIcon" src="./assets/Angular.png"/>
-                            <img className="cardIcon" src="./assets/Typescript.png"/>
-                            <img className="cardIcon" src="./assets/html5-logo.png"/>
-                            <img className="cardIcon" src="./assets/css.png"/>
-                        </IonCardContent>
-                        <IonButton fill="clear" href='https://angular-wordle-maybe.web.app/' target='_blank'>View App</IonButton>
-                        <IonButton fill="clear" href='https://github.com/afgmlff/angular-maybe/tree/main/wordle' target='_blank'>Source code</IonButton>
-                    </IonCard>
-                </IonCol>
+                            </IonCardContent>
+
+                            <IonCardContent>
+                                <img className="cardIcon" src="./assets/React-icon.svg.png"/>
+                                <img className="cardIcon" src="./assets/Typescript.png"/>
+                                <img className="cardIcon" src="./assets/ionic-logo.png"/>
+                                <img className="cardIcon" src="./assets/html5-logo.png"/>
+                                <img className="cardIcon" src="./assets/css.png"/>
+                            </IonCardContent>
+                            <IonButton fill="clear" href='' target='_blank'>View App</IonButton>
+                            <IonButton fill="clear" href='https://github.com/afgmlff/portfolio' target='_blank'>Source code</IonButton>
+                        </IonCard>
+                    </IonCol>
+
+                    <IonCol className=''  offset=''>
+                            
+                            <img className='projRight' src="./assets/portpoliGif2.gif"></img>
+                    </IonCol>
 
 
                </IonRow>
