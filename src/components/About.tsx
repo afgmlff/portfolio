@@ -40,11 +40,10 @@ useEffect(() => {
         
                 <IonRow className="ion-padding contentTitle dskmob margTop"> {/* change class name later. */}
                     <IonCol>
-                        <div className='aboutText'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                        <div className='aboutText'>After majoring in Computer Engineering, my enthusiasm for Web development grew fondly, 
+                        especially in front-end development. I have worked with plain HTML, CSS and Javascript for a few years, 
+                        and started learning new technologies such as Angular and ReactJS with some personal projects. 
+                        <br/>Besides programming, I enjoy drawing, writing and playing piano.</div>
                     </IonCol>
                     <IonCol className='ion-justify-content-center'>
                         <img className='aboutIcon' src="./assets/icon/me.png"></img>
