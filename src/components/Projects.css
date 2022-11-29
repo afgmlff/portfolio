@@ -45,9 +45,9 @@
 
 
 
-    border-right: 5px solid white;
-    border-bottom: 5px solid white;
-    border-top: 5px solid white;
+    border-left: 5px solid rgb(71, 34, 78);
+    border-bottom: 5px solid rgb(71, 34, 78);
+    border-top: 5px solid rgb(71, 34, 78);
 }
 
 .bgProj{
@@ -81,6 +81,19 @@ ion-card{
 
 .topElement{
     z-index: 3;
+}
+
+
+
+.divideProj{
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+    height: 3px;
+    width: 600px;
+    background-color: #00000013;
+    border-radius: 10px;
 }
 
 

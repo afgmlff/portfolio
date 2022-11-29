@@ -10,9 +10,9 @@ export const Footer = () => {
     <>
 
 
-        <IonFooter>
-            <p className='copyr'>© 2022 Aécio Fernandes</p>
-        </IonFooter>
+
+            <p className='teste'>© 2022 Aécio Fernandes</p>
+
     </>
     )
 }

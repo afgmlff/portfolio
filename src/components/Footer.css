@@ -1,3 +1,6 @@
+
+
+
 .test{
     display: flex;
     flex: 1;
@@ -23,4 +26,11 @@
     align-items: center;
     color: #eaeaea;
     margin-bottom: 0px;
+
+    background-color: ;
+}
+
+
+.teste{
+    background-color: ;
 }

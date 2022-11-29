@@ -85,14 +85,15 @@ useEffect(() => {
 
                </IonRow>
 
+                <div className='divideProj'/>
 
-
-
-
-                <IonRow className="ion-padding fadeIn2 dskmob margTop "> {/* change class name later. */}
-
-                    <IonCol size='3' offset='' className='topElement'>
-                        <IonCard>
+               <IonRow className="ion-padding fadeIn2 dskmob margTop"> {/* change class name later. */}
+                <IonCol className='ion-text-left' size='6' offset='1'>
+                        
+                        <img className='projRight' src="./assets/portpoliGif2.gif"></img>
+                </IonCol>
+                <IonCol size='3' offset='-1' className='topElement'>
+                <IonCard>
                             <IonCardHeader>
                                 <IonCardTitle><span className='boldT'>Portfolio page</span></IonCardTitle>
                                 <IonCardSubtitle>a web page with info about me</IonCardSubtitle>
@@ -113,12 +114,7 @@ useEffect(() => {
                             <IonButton fill="clear" href='' target='_blank'>View App</IonButton>
                             <IonButton fill="clear" href='https://github.com/afgmlff/portfolio' target='_blank'>Source code</IonButton>
                         </IonCard>
-                    </IonCol>
-
-                    <IonCol className=''  offset=''>
-                            
-                            <img className='projRight' src="./assets/portpoliGif2.gif"></img>
-                    </IonCol>
+                </IonCol>
 
 
                </IonRow>
