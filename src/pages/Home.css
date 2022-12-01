@@ -9,6 +9,11 @@ canvas {
     flex: 1 0 100%;
   }
 
+
+
+.fadeIn{
+    opacity: 0;
+}
 .sticky{
     position: sticky;
     top: 20px;
@@ -47,6 +52,15 @@ canvas {
     bottom:0;
     margin-bottom: 20px;
     
+}
+
+
+.animation2{
+    opacity: 1;
+    transition: all 4s;
+    -webkit-transition: all 4s;
+    -moz-transition: all 4s;
+    -o-transition: all 4s;
 }
 
 @media (max-width: 1142px) {

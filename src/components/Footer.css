@@ -32,5 +32,8 @@
 
 
 .teste{
-    background-color: ;
+    font-family: 'Roboto', sans-serif;
+    color: #595959;
+    justify-content: center;
+    display: flex;
 }

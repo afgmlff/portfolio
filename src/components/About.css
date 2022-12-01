@@ -188,3 +188,22 @@
     }
 }
 
+@media (min-width: 883px) {
+    .aboutText{
+        margin-top: 15px;
+    }
+}
+
+@media (min-width: 1067px) {
+    .aboutText{
+        margin-top: 25px;
+    }
+}
+
+@media (min-width: 1784px) {
+    .aboutText{
+        margin-top: 55px;
+    }
+}
+
+

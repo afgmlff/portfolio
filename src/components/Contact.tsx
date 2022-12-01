@@ -37,17 +37,17 @@ useEffect(() => {
                 <IonCol><div className='contentTitle2 margTop'>Contact me<div className="underlineTitle"></div></div></IonCol>
                 </IonRow>
         
-                <IonRow className="ion-padding contentTitle dskmob margTop fadeIn3 ion-justify-content-center"> {/* change class name later. */}
+                <IonRow className="ion-padding contentTitle dskmob margTop fadeIn3 ion-justify-content-center "> {/* change class name later. */}
                     <IonCol className='ion-justify-content-center' size='1'>
                         <a className='contactGhub' href='https://github.com/afgmlff' target='blank_'><img className='contactGhub'></img></a>
                     </IonCol>
 
                     <IonCol className='ion-justify-content-center' size='1'>
-                        <img className='contactMail'></img>
+                        <a className='contactMail' href="mailto:aeciofgm2@gmail.com"><img className='contactMail'></img></a>
                     </IonCol>
 
-                    <IonCol className='ion-justify-content-center' size='1'>
-                        <img className='contactLkd'></img>
+                    <IonCol className='ion-justify-content-center margBot' size='1'>
+                        <a className='contactLkd' href="https://www.linkedin.com/in/a%C3%A9cio-fernandes-29352a193/" target='blank_'><img className='contactLkd'></img></a>
                     </IonCol>
                 </IonRow>
             </IonGrid>

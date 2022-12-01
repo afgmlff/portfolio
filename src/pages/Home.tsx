@@ -149,7 +149,26 @@ const Home: React.FC = () => {
 
 
 
+  useEffect(() => {
 
+    let options = {
+        root: null,
+      };
+    
+    const observer = new IntersectionObserver(entries => {
+        // Loop over the entries
+        entries.forEach(entry => {
+          // If the element is visible
+          if (entry.isIntersecting) {
+            // Add the animation class
+            entry.target.classList.add('animation2');
+          }
+        });
+      }, options);
+      
+      observer.observe(document.querySelector('.fadeIn')!);
+
+})
 
   
 
@@ -157,20 +176,10 @@ const Home: React.FC = () => {
     <IonPage>
       <IonContent fullscreen>
       <IonGrid style={{ padding : 0}}>
-        <div>
-        <CreateAnimation
-            play
-            duration={4000}
-            fromTo={{
-              property: 'opacity',
-              fromValue: '0',
-              toValue: '1'
-            }}
-          >
-
+        <div className='fadeIn'>
         <IonRow ><p className='welcome'>Hi, I'm <span className='welcomeColor'>Aécio</span>.<br/>Scroll down and get to know me.</p></IonRow>
         <IonRow class="ion-justify-content-center ion-hide-lg-down"><img className='welcomeImg' src="./assets/mouseScroll.gif"></img></IonRow>
-        </CreateAnimation>
+
         </div>
       </IonGrid>
         <canvas id="canvas"></canvas>
