@@ -6,6 +6,7 @@ import './Home.css';
 
 import { Waypoint } from 'react-waypoint';
 import { Projects } from '../components/Projects';
+import { Contact } from '../components/Contact';
 
 
 const Home: React.FC = () => {
@@ -175,6 +176,7 @@ const Home: React.FC = () => {
         <canvas id="canvas"></canvas>
         <About />
         <Projects />
+        <Contact />
         <Footer />
       </IonContent>
     </IonPage>
