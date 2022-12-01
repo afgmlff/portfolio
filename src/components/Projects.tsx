@@ -57,7 +57,7 @@ useEffect(() => {
                 <IonRow className="ion-padding fadeIn1 dskmob margTop"> {/* change class name later. */}
                 <IonCol className='ion-text-left' size='6'>
                         
-                        <img className='projLeft' src="./assets/wordleGif.gif"></img>
+                       <a className='proj1link' href='https://angular-wordle-maybe.web.app/' target='blank_'><img className='projLeft' src="./assets/wordleGif.gif"></img></a>
                 </IonCol>
                 <IonCol size='3' offset='-2' className='topElement'>
                     <IonCard>
@@ -90,7 +90,7 @@ useEffect(() => {
                <IonRow className="ion-padding fadeIn2 dskmob margTop"> {/* change class name later. */}
                 <IonCol className='ion-text-left' size='6' offset='1'>
                         
-                        <img className='projRight' src="./assets/portpoliGif2.gif"></img>
+                        <a href='.'><img className='projRight' src="./assets/portpoliGif2.gif"></img></a>
                 </IonCol>
                 <IonCol size='3' offset='-1' className='topElement'>
                 <IonCard>

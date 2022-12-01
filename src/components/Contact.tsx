@@ -39,7 +39,7 @@ useEffect(() => {
         
                 <IonRow className="ion-padding contentTitle dskmob margTop fadeIn3"> {/* change class name later. */}
                     <IonCol className='ion-justify-content-center'>
-                        <a href='https://github.com/afgmlff' target='blank_'><div className='contactGhub'></div></a>
+                        <a className='contactGhub' href='https://github.com/afgmlff' target='blank_'><img className='contactGhub'></img></a>
                     </IonCol>
 
                     <IonCol className='ion-justify-content-center'>

@@ -31,6 +31,20 @@
     border-left: 5px solid white;
     border-bottom: 5px solid white;
     border-top: 5px solid white;
+
+    transition: transform .2s;
+}
+
+.proj1link{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    width: 500px;
+}
+
+.projLeft:hover{
+    transform: scale(.9);
 }
 
 
@@ -48,6 +62,12 @@
     border-left: 5px solid rgb(71, 34, 78);
     border-bottom: 5px solid rgb(71, 34, 78);
     border-top: 5px solid rgb(71, 34, 78);
+
+    transition: transform .2s;
+}
+
+.projRight:hover{
+    transform: scale(.9);
 }
 
 .bgProj{
