@@ -10,7 +10,8 @@
     -o-transition: all 3s;
 }
 
-
+.reduceGrid{
+}
 .contactGhub{
     width: 80px;
     margin-left: auto;
@@ -18,6 +19,38 @@
     display: flex;
     content: url('../../public/assets/githubW.png');
     transition: transform .2s;
+}
+
+.contactMail{
+    width: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    content: url('../../public/assets/mailW.png');
+    transition: transform .2s;
+}
+
+.contactLkd{
+    width: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    content: url('../../public/assets/linkedin.png');
+    transition: transform .2s;
+}
+
+.contactMail:hover{
+
+    transform: scale(.8);
+
+    
+}
+
+.contactLkd:hover{
+
+    transform: scale(.8);
+
+    
 }
 
 .contactGhub:hover{

@@ -32,18 +32,22 @@ useEffect(() => {
     return (
     <>
 
-            <IonGrid className="ion-no-padding ion-no-margin copyableText">
+            <IonGrid className="ion-no-padding ion-no-margin copyableText reduceGrid">
                 <IonRow >
                 <IonCol><div className='contentTitle2 margTop'>Contact me<div className="underlineTitle"></div></div></IonCol>
                 </IonRow>
         
-                <IonRow className="ion-padding contentTitle dskmob margTop fadeIn3"> {/* change class name later. */}
-                    <IonCol className='ion-justify-content-center'>
+                <IonRow className="ion-padding contentTitle dskmob margTop fadeIn3 ion-justify-content-center"> {/* change class name later. */}
+                    <IonCol className='ion-justify-content-center' size='1'>
                         <a className='contactGhub' href='https://github.com/afgmlff' target='blank_'><img className='contactGhub'></img></a>
                     </IonCol>
 
-                    <IonCol className='ion-justify-content-center'>
-                        <img className='aboutIcon' src="./assets/icon/me.png"></img>
+                    <IonCol className='ion-justify-content-center' size='1'>
+                        <img className='contactMail'></img>
+                    </IonCol>
+
+                    <IonCol className='ion-justify-content-center' size='1'>
+                        <img className='contactLkd'></img>
                     </IonCol>
                 </IonRow>
             </IonGrid>
