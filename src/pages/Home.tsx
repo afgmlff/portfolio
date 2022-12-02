@@ -186,7 +186,6 @@ const Home: React.FC = () => {
         <About />
         <Projects />
         <Contact />
-        <Footer />
       </IonContent>
     </IonPage>
   );

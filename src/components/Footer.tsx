@@ -10,9 +10,9 @@ export const Footer = () => {
     <>
 
 
-
+            <IonGrid>
             <p className='teste'>© 2022 Aécio Fernandes</p>
-
+            </IonGrid>
     </>
     )
 }

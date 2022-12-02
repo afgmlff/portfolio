@@ -14,11 +14,9 @@
 }
 .contactGhub{
     width: 60px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
     content: url('../../public/assets/githubW.png');
     transition: transform .2s;
+    margin-right: 30px;
 }
 
 
@@ -28,20 +26,15 @@
 
 .contactMail{
     width: 60px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
     content: url('../../public/assets/mailW.png');
     transition: transform .2s;
 }
 
 .contactLkd{
     width: 60px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
     content: url('../../public/assets/linkedin.png');
     transition: transform .2s;
+    margin-left: 30px;
 }
 
 .contactMail:hover{
@@ -49,6 +42,11 @@
     transform: scale(.8);
 
     
+}
+
+.center{
+    display: flex;
+    justify-content: center;
 }
 
 .contactLkd:hover{
@@ -88,7 +86,14 @@
     opacity: 1;
 }
 
-
+.foot{
+    margin-top: 20px;
+    background-color: #1a1a1a;
+    height: 40px;
+    display: flex;
+    justify-content:center;
+    color: rgb(74, 74, 74);
+}
 
 
 
@@ -122,4 +127,28 @@
     }
 
 
+}
+
+@media (max-width: 1290px) {
+    .contactGhub{
+        scale: 0.8;
+    }
+    .contactLkd{
+        scale: 0.8;
+    }
+    .contactMail{
+        scale: 0.8;
+    }
+}
+
+@media (max-width: 767px) {
+    .contactGhub{
+        scale: 0.6;
+    }
+    .contactLkd{
+        scale: 0.6;
+    }
+    .contactMail{
+        scale: 0.6;
+    }
 }
