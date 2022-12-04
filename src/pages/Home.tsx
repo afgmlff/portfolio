@@ -80,7 +80,7 @@ const Home: React.FC = () => {
       }
     }
     ctx!.lineWidth = 0.05;
-    ctx!.strokeStyle = 'white';
+    ctx!.strokeStyle = '#25FFFF';
     ctx!.stroke();
   }
 

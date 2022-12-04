@@ -72,10 +72,10 @@ useEffect(() => {
                         </IonCardContent>
 
                         <IonCardContent>
-                            <img className="cardIcon" src="./assets/Angular.png"/>
-                            <img className="cardIcon" src="./assets/Typescript.png"/>
-                            <img className="cardIcon" src="./assets/html5-logo.png"/>
-                            <img className="cardIcon" src="./assets/css.png"/>
+                            <a href="https://angular.io/" target="blank_"> <img className="cardIcon" src="./assets/Angular.png"/></a>
+                            <a href="https://www.typescriptlang.org/" target="blank_"><img className="cardIcon" src="./assets/Typescript.png"/></a>
+                            <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" target="blank_"><img className="cardIcon" src="./assets/html5-logo.png"/></a>
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="blank_"><img className="cardIcon" src="./assets/css.png"/></a>
                         </IonCardContent>
                         <IonButton fill="clear" href='https://angular-wordle-maybe.web.app/' target='_blank'>View App</IonButton>
                         <IonButton fill="clear" href='https://github.com/afgmlff/angular-maybe/tree/main/wordle' target='_blank'>Source code</IonButton>
@@ -105,11 +105,11 @@ useEffect(() => {
                             </IonCardContent>
 
                             <IonCardContent>
-                                <img className="cardIcon" src="./assets/React-icon.svg.png"/>
-                                <img className="cardIcon" src="./assets/Typescript.png"/>
-                                <img className="cardIcon" src="./assets/ionic-logo.png"/>
-                                <img className="cardIcon" src="./assets/html5-logo.png"/>
-                                <img className="cardIcon" src="./assets/css.png"/>
+                                <a href='https://reactjs.org/' target="blank_"><img className="cardIcon" src="./assets/React-icon.svg.png"/></a>
+                                <a href="https://www.typescriptlang.org/" target="blank_"><img className="cardIcon" src="./assets/Typescript.png"/></a>
+                                <a href='https://ionicframework.com/' target="blank_"><img className="cardIcon" src="./assets/ionic-logo.png"/></a>
+                                <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" target="blank_"><img className="cardIcon" src="./assets/html5-logo.png"/></a>
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="blank_"><img className="cardIcon" src="./assets/css.png"/></a>
                             </IonCardContent>
                             <IonButton fill="clear" href='' target='_blank'>View App</IonButton>
                             <IonButton fill="clear" href='https://github.com/afgmlff/portfolio' target='_blank'>Source code</IonButton>

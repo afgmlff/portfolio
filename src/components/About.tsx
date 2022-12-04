@@ -42,7 +42,7 @@ useEffect(() => {
                     <IonCol>
                         <div className='aboutText'>After majoring in Computer Engineering, my enthusiasm for Web development grew fondly, 
                         especially in front-end development. I have worked with plain HTML, CSS and Javascript for a few years, 
-                        and started learning new technologies such as Angular and ReactJS with some personal projects. 
+                        and started learning new technologies such as Angular and ReactJS through some personal projects. 
                         <br/>Besides programming, I enjoy drawing, writing and playing piano.</div>
                     </IonCol>
                     <IonCol className='ion-justify-content-center'>
