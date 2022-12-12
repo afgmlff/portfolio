@@ -34,7 +34,7 @@ useEffect(() => {
 
             <IonGrid className="ion-no-padding ion-no-margin copyableText reduceGrid">
                 <IonRow >
-                <IonCol><div className='contentTitle2 margTop'>Contact me<div className="underlineTitle"></div></div></IonCol>
+                <IonCol><div className='contentTitle2 margTop weight400 boldT'>Contact me<div className="underlineTitle"></div></div></IonCol>
                 </IonRow>
 
                 <IonCardContent className=' ion-padding center  margTop fadeIn3 '>

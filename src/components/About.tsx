@@ -35,7 +35,7 @@ useEffect(() => {
             <IonGrid className="ion-no-padding ion-no-margin copyableText">
                 <IonRow class="ion-no-margin"><div className='transitionDiv'></div></IonRow>
                 <IonRow >
-                <IonCol><div className='contentTitle2'>About<div className="underlineTitle"></div></div></IonCol>
+                <IonCol><div className='contentTitle2 weight400 boldT'>About<div className="underlineTitle"></div></div></IonCol>
                 </IonRow>
         
                 <IonRow className="ion-padding contentTitle dskmob margTop"> {/* change class name later. */}

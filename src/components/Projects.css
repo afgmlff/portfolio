@@ -16,6 +16,10 @@
     -o-transition: all 3s;
 }
 
+.weight400{
+    font-weight: 400;
+}
+
 
 .projLeft{
     margin-left: auto;
