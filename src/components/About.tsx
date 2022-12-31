@@ -29,6 +29,22 @@ useEffect(() => {
 })
 
 
+const onButtonClick = () => {
+  // using Java Script method to get PDF file
+  fetch('SamplePDF.pdf').then(response => {
+      response.blob().then(blob => {
+          // Creating new object of PDF file
+          const fileURL = window.URL.createObjectURL(blob);
+          // Setting various property values
+          let alink = document.createElement('a');
+          alink.href = fileURL;
+          alink.download = 'curriculum.pdf';
+          alink.click();
+      })
+  })
+}
+
+
     return (
     <>
 
@@ -43,7 +59,13 @@ useEffect(() => {
                         <div className='aboutText'>After majoring in Computer Engineering, my enthusiasm for Web development grew fondly, 
                         especially in front-end development. I have worked with plain HTML, CSS and Javascript for a few years, 
                         and started learning new technologies such as Angular and ReactJS through some personal projects. 
-                        <br/>Besides programming, I enjoy drawing, writing and playing piano.</div>
+                        <br/>Besides programming, I enjoy drawing, writing and playing piano.<br/><br/>
+                        <span className='btCurriculum' onClick={onButtonClick}>
+                        
+                          Download my CV
+                        </span>
+                        </div>
+
                     </IonCol>
                     <IonCol className='ion-justify-content-center'>
                         <img className='aboutIcon' src="./assets/icon/me.png"></img>
