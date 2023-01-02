@@ -60,9 +60,9 @@ const onButtonClick = () => {
                         especially in front-end development. I have worked with plain HTML, CSS and Javascript for a few years, 
                         and started learning new technologies such as Angular and ReactJS through some personal projects. 
                         <br/>Besides programming, I enjoy drawing, writing and playing piano.<br/><br/>
-                        <span className='btCurriculum' onClick={onButtonClick}>
-                        
-                          Download my CV
+                        <span className='btCurriculum'>
+                        <a className='btCurriculum' href='/curriculum.pdf' download>
+                          Download my CV</a>
                         </span>
                         </div>
 
