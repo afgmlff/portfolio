@@ -10,6 +10,24 @@
     -o-transition: all 3s;
 }
 
+.animation1{
+    opacity: 1;
+    transition: all 3s;
+    -webkit-transition: all 3s;
+    -moz-transition: all 3s;
+    -o-transition: all 3s;
+}
+
+
+.animation2{
+    opacity: 1;
+    transition: all 3s;
+    -webkit-transition: all 3s;
+    -moz-transition: all 3s;
+    -o-transition: all 3s;
+}
+
+
 .reduceGrid{
 }
 .contactGhub{
@@ -107,6 +125,22 @@
         margin-top: 40px;
     }
     .animation{
+        opacity: 1;
+        transition: all 2s;
+        -webkit-transition: all 2s;
+        -moz-transition: all 2s;
+        -o-transition: all 2s;
+    }
+
+    .animation1{
+        opacity: 1;
+        transition: all 2s;
+        -webkit-transition: all 2s;
+        -moz-transition: all 2s;
+        -o-transition: all 2s;
+    }
+
+    .animation2{
         opacity: 1;
         transition: all 2s;
         -webkit-transition: all 2s;

@@ -220,3 +220,132 @@
 }
 
 
+
+
+.button2 {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    background: none;
+    color: #0f1923;
+    cursor: pointer;
+    position: relative;
+    padding: 8px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    transition: all .15s ease;
+  }
+  
+  .button2::before,
+  .button2::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    left: 0;
+    height: calc(50% - 5px);
+    border: 1px solid #7D8082;
+    transition: all .15s ease;
+  }
+  
+  .button2::before {
+    top: 0;
+    border-bottom-width: 0;
+  }
+  
+  .button2::after {
+    bottom: 0;
+    border-top-width: 0;
+  }
+  
+  .button2:active,
+  .button2:focus {
+    outline: none;
+  }
+  
+  .button2:active::before,
+  .button2:active::after {
+    right: 3px;
+    left: 3px;
+  }
+  
+  .button2:active::before {
+    top: 3px;
+  }
+  
+  .button2:active::after {
+    bottom: 3px;
+  }
+  
+  .button_lg2 {
+    position: relative;
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #0f1923;
+    overflow: hidden;
+    box-shadow: inset 0px 0px 0px 1px transparent;
+  }
+  
+  .button_lg2::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 2px;
+    background-color: #0f1923;
+  }
+  
+  .button_lg2::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 4px;
+    height: 4px;
+    background-color: #0f1923;
+    transition: all .2s ease;
+  }
+  
+  .button_sl2 {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: -1px;
+    left: -8px;
+    width: 0;
+    background-color: #ff4655;
+    transform: skew(-15deg);
+    transition: all .2s ease;
+  }
+  
+  .button_text2 {
+    position: relative;
+  }
+  
+  .button2:hover {
+    color: #0f1923;
+  }
+  
+  .button2:hover .button_sl2 {
+    width: calc(100% + 15px);
+  }
+  
+  .button2:hover .button_lg2::after {
+    background-color: #fff;
+  }
+  
+
+  .aDownload {
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+  }
+
+
+  
