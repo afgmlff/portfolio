@@ -38,7 +38,7 @@ const onButtonClick = () => {
           // Setting various property values
           let alink = document.createElement('a');
           alink.href = fileURL;
-          alink.download = 'curriculum.pdf';
+          alink.download = 'curriculum english.pdf';
           alink.click();
       })
   })
@@ -63,7 +63,7 @@ const onButtonClick = () => {
                         <button className='button2'>
                             <span className='button_lg2'>
                                 <span className="button_sl2"></span>
-                                <a className='aDownload' href='/curriculum.pdf' download>
+                                <a className='aDownload' href='/curriculum english.pdf' download>
                                 <span className="button_text2">Download my CV</span></a>
                             </span>
                         </button>
